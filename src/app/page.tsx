@@ -1,60 +1,27 @@
-import Image from "next/Image";
+import Image from "next/image";
 import Link from "next/link";
+import Navbar from "./components/Navbar";
+import itdiv from "/public/smcu.png"
 
 export default function Home() {
   return (
 <main>
-  <body className= "text-center" >
-    <div className ="flex ">
-        <div className ="w-1/6 h-12 rounded-l-lg ">
-        <Image src="/smcu.png" width={50} height={50}/>
+    <Navbar />
+    <h2 id="home">
+        <div className = "home" ><Image src={itdiv} alt="smcu" width={250} height={250}/></div>
+        <div className = "text-4xl lg:text-6xl font-bold">IT Division</div>
+        <div className = "text-4xl lg:text-6xl font-bold">The Student Union of Faculty of Medicine, Chulalongkorn University
         </div>
-        <div className="w-1/6 h-12  ">
-        <strong> SMCU IT </strong>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12  ">
-        <a href="#home">
-          <strong>Home</strong>
-        </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 ">
-        <a href="#aboutus">
-          <strong>About us</strong>
-        </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 ">
-        <a href="#location">
-          <strong>Location</strong>
-        </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 ">
-        <a href="#contact">
-          <strong>Contact</strong>
-        </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 rounded-r-lg">
-        <a href="#teammembers">
-          <strong>Teammember</strong>
-        </a>
-        </div>
-    </div>
-    </body>
-  <h2 id="home">
-      <div className = "home" ><Image src="/smcu.png" width={250} height={250}/></div>
-      <div className = "text-4xl lg:text-6xl font-bold">IT Division</div>
-      <div className = "text-4xl lg:text-6xl font-bold">The Student Union of Faculty of Medicine, Chulalongkorn University</div>
-
-  </h2>
+    </h2>
 
        
 
 
-  <h2 id="aboutus ">
-      <h2 className="text-2xl ">About us</h2>
-  </h2>
+    <h2 id="aboutus ">
+        <h2 className="text-2xl ">About us</h2>
+    </h2>
   <p className="text-lg">
-
-  ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
+    ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
       ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ นอกจากนี้พวกเรายังสนใจใน computer science, data science, machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
       ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
       
@@ -100,7 +67,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 ณภัทษร สุกใส(กึ๊น)
                             </h4>
@@ -121,7 +88,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 ธัทเดช กัลยพฤกษ์(เอส)
                             </h4>
@@ -142,7 +109,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 พิชชาภา ลักษณ์เลิศกุล(ชูก้า)
                             </h4>
@@ -163,7 +130,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 ศิรดา อุทัยวัฒน์ (แนน)
                             </h4>
@@ -184,7 +151,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 จันทร์วลัย เลี่ยนเครือ (เกน)
                             </h4>
@@ -205,7 +172,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 วรวีร์ พัวพรพงษ์ (วินชี่)
                             </h4>
@@ -226,7 +193,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                 กัณณพงศ์ กาญจนกุลดำรง (อาอัส)
                             </h4>
@@ -248,7 +215,7 @@ export default function Home() {
                 <div className="content">
                     <ul>
                         <li>
-                            <Image src="/smcu.png" width={50} height={50}/>
+                            {/* <Image src="/smcu.png" width={50} height={50}/> */}
                             <h4>
                                ศศิษา ปานพรหมมินทร์ (บลิ้งค์)
                             </h4>
