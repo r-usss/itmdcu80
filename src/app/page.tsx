@@ -1,14 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
-import itdiv from "/public/smcu.png"
+// import smcu from "/public/smcu.png"
+import itlogo from "/public/it_logo.png"
 
 export default function Home() {
   return (
 <main>
     <Navbar />
+    <br></br>
+    <br></br>
     <h2 id="home">
-        <div className = "home" ><Image src={itdiv} alt="smcu" width={250} height={250}/></div>
+        <div className = "home" ><Image src={itlogo} alt="it_smcu" width={250} height={250}/></div>
         <div className = "text-4xl lg:text-6xl font-bold">IT Division</div>
         <div className = "text-4xl lg:text-6xl font-bold">The Student Union of Faculty of Medicine, Chulalongkorn University
         </div>
