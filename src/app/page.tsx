@@ -14,7 +14,7 @@ export default function Home() {
         </div>
     </h2>
 
-       
+
 
 
     <h2 id="aboutus ">
@@ -24,15 +24,14 @@ export default function Home() {
     ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
       ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ นอกจากนี้พวกเรายังสนใจใน computer science, data science, machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
       ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
-      
+
+  
   </p>
  
-
       
   <h2 id="location">
     <h2 className="text-2xl ">Location</h2>
   </h2>
-
     
   <p>
       <Link href="https://maps.app.goo.gl/Qg6S6kzAWEeu3U2y5">
@@ -42,27 +41,19 @@ export default function Home() {
       1873 ถ. พระรามที่ 4 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330
       
   </p>
-
    
       
   <h2 id="contact">
     <h2 className="text-2xl ">Contact</h2>
   </h2>
-
   <h5>
       Email : itdivision@docchula.com
   </h5>
-
-
-
-
-
   <h2 id="teammembers">
     <h2 className="text-2xl ">  Team members</h2>
   </h2>
   
   <h4>ชั้นปีที่ 1</h4>
-
             <div className="item">
                 <div className="content">
                     <ul>
@@ -210,7 +201,6 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-
             <div className="item">
                 <div className="content">
                     <ul>
