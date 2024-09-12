@@ -10,14 +10,19 @@ export default function Home() {
     <Navbar />
     <br></br>
     <br></br>
-    <h2 id="home">
-        <div className = "home" ><Image src={itlogo} alt="it_smcu" width={250} height={250}/></div>
+    <br></br>
+    <div className="container">
+
+    <h2 id="home" className="text-center">
+        <div className = "home" ><Image className="mx-auto" src={itlogo} alt="it_smcu" width={250} height={250}/></div>
+        <br></br>
         <div className = "text-4xl lg:text-6xl font-bold">IT Division</div>
-        <div className = "text-4xl lg:text-6xl font-bold">The Student Union of Faculty of Medicine, Chulalongkorn University
+        <div className = "text-4xl lg:text-6xl font-bold">The Student Union of Faculty of Medicine, 
+            <br></br>Chulalongkorn University
         </div>
     </h2>
 
-
+    <br></br>
 
 
     <h2 id="aboutus ">
@@ -31,7 +36,8 @@ export default function Home() {
   
   </p>
  
-      
+    <br></br>
+
   <h2 id="location">
     <h2 className="text-2xl ">Location</h2>
   </h2>
@@ -45,6 +51,7 @@ export default function Home() {
       
   </p>
    
+   <br></br>
       
   <h2 id="contact">
     <h2 className="text-2xl ">Contact</h2>
@@ -52,6 +59,7 @@ export default function Home() {
   <h5>
       Email : itdivision@docchula.com
   </h5>
+  <br></br>
   <h2 id="teammembers">
     <h2 className="text-2xl ">  Team members</h2>
   </h2>
@@ -224,6 +232,7 @@ export default function Home() {
                     </ul>
                 </div>
               </div>
+    </div>
   </main>
   
   );

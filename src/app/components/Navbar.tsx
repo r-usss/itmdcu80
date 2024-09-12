@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <>
       <div className ="flex ">
-        <div className ="w-1/6 h-12 bg-white rounded-l-lg text-center">
+        <div className =" h-12 bg-white rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50}/>
         </div>
-        <div className="w-1/6 h-12 bg-white text-left ">
+        <div className="w-1/6 h-12 bg-white text-left">
           <strong> SMCU IT </strong>
         </div>
         <div className="w-1/6 bg-green-600 h-12 text-center">
