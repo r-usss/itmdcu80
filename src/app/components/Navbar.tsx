@@ -1,10 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
-import smcu from '/public/smcu.png'
 
 const Navbar = () => {  
   
-  const links = ["#Home","#Aboutus","#Location","#Contact","#Teammembers",];
+  const links = ["#home","#aboutus","#location","#contact","#teammembers",];
   const myButtons = ["Home","About us","Location","Contact","Team members",];
  
   const buttons = links.map((el, i) => (<a href={el}>{myButtons[i]}</a>));
@@ -12,3 +10,4 @@ const Navbar = () => {
   return <div> {buttons} </div>;}
   
   export default Navbar
+
