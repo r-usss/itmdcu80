@@ -7,12 +7,12 @@ import itlogo from "/public/it_logo.png"
 export default function Home() {
   return (
 <main>
+
     <Navbar />
     <br></br>
     <br></br>
     <br></br>
-    <div className="container">
-
+    <div classname = "container">
     <h2 id="home" className="text-center">
         <div className = "home" ><Image className="mx-auto" src={itlogo} alt="it_smcu" width={250} height={250}/></div>
         <br></br>
