@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
-// import smcu from "/public/smcu.png"
+import smcu from "/public/smcu.png"
 import itlogo from "/public/it_logo.png"
+
 
 export default function Home() {
   return (
 <main>
 
+    <div className =" h-12 bg-white rounded-l-lg">
+    <Image src={smcu} alt="smcu" width={50} height={50}/></div>
+    <div className="w-1/6 h-12 bg-white text-left">
+    <strong> SMCU IT </strong></div>
     <Navbar />
     <br></br>
     <br></br>
@@ -25,7 +30,7 @@ export default function Home() {
     <br></br>
 
 
-    <h2 id="aboutus ">
+    <h2 id="aboutus">
         <div className="text-2xl font-bold">About us</div>
     </h2>
   <p className="text-lg">
