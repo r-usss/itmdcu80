@@ -26,21 +26,19 @@ export default function Home() {
 
 
     <h2 id="aboutus ">
-        <h2 className="text-2xl ">About us</h2>
+        <div className="text-2xl font-bold">About us</div>
     </h2>
   <p className="text-lg">
     ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
       ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ นอกจากนี้พวกเรายังสนใจใน computer science, data science, machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
       ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ. พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์ เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน 
-
-  
   </p>
  
     <br></br>
 
-  <h2 id="location">
-    <h2 className="text-2xl ">Location</h2>
-  </h2>
+    <h2 id="location">
+    <div className="text-2xl font-bold">Location</div>
+    </h2>
     
   <p>
       <Link href="https://maps.app.goo.gl/Qg6S6kzAWEeu3U2y5">
@@ -54,14 +52,14 @@ export default function Home() {
    <br></br>
       
   <h2 id="contact">
-    <h2 className="text-2xl ">Contact</h2>
+    <div className="text-2xl font-bold">Contact</div>
   </h2>
   <h5>
       Email : itdivision@docchula.com
   </h5>
   <br></br>
   <h2 id="teammembers">
-    <h2 className="text-2xl ">  Team members</h2>
+    <div className="text-2xl font-bold">  Team members</div>
   </h2>
   
   <h4>ชั้นปีที่ 1</h4>
@@ -73,7 +71,7 @@ export default function Home() {
                             <h4>
                                 ณภัทษร สุกใส(กึ๊น)
                             </h4>
-                            <p>
+                            <div>
                                 Email : keinkunluk@gmail.com
                                 <div>
                                     Ig : 
@@ -81,7 +79,7 @@ export default function Home() {
                                         kein._.stagram
                                     </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +92,7 @@ export default function Home() {
                             <h4>
                                 ธัทเดช กัลยพฤกษ์(เอส)
                             </h4>
-                            <p>
+                            <div>
                                 Email : kanlayphrukthaddej@gmail.com
                                  <div>
                                        Ig : 
@@ -102,7 +100,7 @@ export default function Home() {
                                         ยังไม่ได้ใส่จ้า
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -115,7 +113,7 @@ export default function Home() {
                             <h4>
                                 พิชชาภา ลักษณ์เลิศกุล(ชูก้า)
                             </h4>
-                            <p>
+                            <div>
                                 Email : pidchapa.lucklertkul@docchula.com
                                  <div>
                                        Ig : 
@@ -123,7 +121,7 @@ export default function Home() {
                                         ยังไม่ได้ใส่จ้า
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -136,7 +134,7 @@ export default function Home() {
                             <h4>
                                 ศิรดา อุทัยวัฒน์ (แนน)
                             </h4>
-                            <p>
+                            <div>
                                 Email : sirada.uth@docchula.com
                                  <div>
                                        Ig : 
@@ -144,7 +142,7 @@ export default function Home() {
                                         sira.uth
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +155,7 @@ export default function Home() {
                             <h4>
                                 จันทร์วลัย เลี่ยนเครือ (เกน)
                             </h4>
-                            <p>
+                            <div>
                                 Email : jennissa0811@docchula.com
                                  <div>
                                        Ig : 
@@ -165,7 +163,7 @@ export default function Home() {
                                         ยังไม่ได้ใส่จ้า
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -178,7 +176,7 @@ export default function Home() {
                             <h4>
                                 วรวีร์ พัวพรพงษ์ (วินชี่)
                             </h4>
-                            <p>
+                            <div>
                                 Email : worawee.pua@docchula.com
                                  <div>
                                        Ig : 
@@ -186,7 +184,7 @@ export default function Home() {
                                         ยังไม่ได้ใส่จ้า
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -199,7 +197,7 @@ export default function Home() {
                             <h4>
                                 กัณณพงศ์ กาญจนกุลดำรง (อาอัส)
                             </h4>
-                            <p>
+                            <div>
                                 Email : kannapongkarn@docchula.com
                                  <div>
                                        Ig : 
@@ -207,7 +205,7 @@ export default function Home() {
                                         r_you.s
                                         </a>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -220,14 +218,14 @@ export default function Home() {
                             <h4>
                                ศศิษา ปานพรหมมินทร์ (บลิ้งค์)
                             </h4>
-                            <p>
+                            <div>
                                 Email : sasisa.blink@dochula.com
                                  <div>
                                        Ig : 
                                         <Link href="https://www.instagram.com/sasisap?igsh=aGZuM2Nudnd0cXJj">
                                         sasisap</Link>
                                 </div>
-                            </p>
+                            </div>
                         </li>
                     </ul>
                 </div>

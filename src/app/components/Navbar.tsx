@@ -13,8 +13,9 @@ const Navbar = () => {
           <strong> SMCU IT </strong>
         </div>
         <div className="w-1/6 bg-green-600 h-12 text-center">
-          <a href="#home"></a>
-          <strong>Home</strong>
+          <a href="#home">
+            <strong>Home</strong>
+          </a>
         </div>
         <div className="w-1/6 bg-green-600 h-12 text-center ">
           <a href="#aboutus">
