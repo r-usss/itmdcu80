@@ -1,13 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
-import smcu from '/public/smcu.png'
+import React from "react";
+import Image from "next/image";
+import smcu from "/public/smcu.png";
 
 const Navbar = () => {
   return (
     <>
-      <div className ="flex ">
-        <div className =" h-12 bg-white rounded-l-lg">
-          <Image src={smcu} alt="smcu" width={50} height={50}/>
+      <div className="flex">
+        <div className="h-12 bg-white rounded-l-lg">
+          <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
         <div className="w-1/6 h-12 bg-white text-left">
           <strong> SMCU IT </strong>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
