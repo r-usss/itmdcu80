@@ -43,7 +43,7 @@ export default function Home() {
 
         <br></br>
 
-        <h2 id="aboutus ">
+        <h2 id="aboutus">
           <div className="text-2xl font-bold">About us</div>
         </h2>
         <p className="text-lg">
