@@ -14,7 +14,7 @@ export default function Members() {
             {list.map((item, index)=>(
                 <div className="mt-5" key={item.name}>
                     <p>profile picture</p>
-                    <p>{item.name}</p>
+                    <p>{item.name} ({item.nickname})</p>
                     <p>E-Mail : {item.email}</p>
                     <p>IG : {item.ig}</p>
                 </div>
