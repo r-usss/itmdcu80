@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar />
 
       <div className="container">
-        <h2 id="home" className="text-center mt-10">
+        <h2 id="home" className="text-center pt-14">
           <div className="home">
             <Image
               className="mx-auto"
@@ -33,18 +33,16 @@ export default function Home() {
               height={250}
             />
           </div>
-          <br />
-          <div className="text-4xl lg:text-6xl font-bold">IT Division</div>
+
+          <div className="text-4xl lg:text-6xl font-bold pt-5">IT Division</div>
           <div className="text-4xl lg:text-6xl font-bold">
             The Student Union of Faculty of Medicine,
             <br></br>Chulalongkorn University
           </div>
         </h2>
 
-        <br></br>
-
         <h2 id="aboutus">
-          <div className="text-2xl font-bold">About us</div>
+          <div className="text-2xl font-bold pt-5">About us</div>
         </h2>
         <p className="text-lg">
           ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
@@ -64,10 +62,9 @@ export default function Home() {
           ไปด้วยกัน
         </p>
 
-        <br></br>
 
         <h2 id="location">
-          <div className="text-2xl font-bold">Location</div>
+          <div className="text-2xl font-bold pt-5">Location</div>
         </h2>
 
         <p>
@@ -77,15 +74,13 @@ export default function Home() {
           1873 ถ. พระรามที่ 4 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330
         </p>
 
-        <br></br>
-
         <h2 id="contact">
-          <div className="text-2xl font-bold">Contact</div>
+          <div className="text-2xl font-bold pt-5">Contact</div>
         </h2>
         <h5>Email : itdivision@docchula.com</h5>
         <br></br>
         <h2 id="teammembers">
-          <div className="text-2xl font-bold"> Team members</div>
+          <div className="text-2xl font-bold pt-5"> Team members</div>
         </h2>
 
         <h4>ชั้นปีที่ 1</h4>
