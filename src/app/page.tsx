@@ -31,7 +31,7 @@ export default function Home() {
               className="mx-auto"
               src={itlogo}
               alt="it_smcu"
-              width={250}
+              width={249}
               height={250}
             />
           </div>
