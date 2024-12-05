@@ -3,6 +3,13 @@ import Image from "next/image";
 import smcu from "/public/smcu.png";
 
 const Navbar = () => {
+  const list = [
+    { sec: "Home", scroll: "#home" },
+    { sec: "About Us", scroll: "#aboutus" },
+    { sec: "Location", scroll: "#location" },
+    { sec: "Contact", scroll: "#contact" },
+    { sec: "Team members", scroll: "#teammembers" },
+  ];
   return (
     <>
       <div className="flex">
@@ -12,31 +19,13 @@ const Navbar = () => {
         <div className="w-1/6 h-12 bg-white text-left">
           <strong> SMCU IT </strong>
         </div>
-        <div className="w-1/6 bg-green-600 h-12 text-center">
-          <a href="#home">
-            <strong>Home</strong>
-          </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 text-center ">
-          <a href="#aboutus">
-            <strong>About us</strong>
-          </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 text-center ">
-          <a href="#location">
-            <strong>Location</strong>
-          </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 text-center ">
-          <a href="#contact">
-            <strong>Contact</strong>
-          </a>
-        </div>
-        <div className="w-1/6 bg-green-600 h-12 text-center rounded-r-lg">
-          <a href="#teammembers">
-            <strong>Teammember</strong>
-          </a>
-        </div>
+        {list.map((item, index) => (
+          <div className="w-1/6 bg-green-600 h-12 text-center">
+            <a href={item.scroll}>
+              <strong>{item.sec}</strong>
+            </a>
+          </div>
+        ))}
       </div>
     </>
   );
