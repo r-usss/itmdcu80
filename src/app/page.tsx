@@ -28,8 +28,7 @@ import itlogo from "/public/it_logo.png";
 export default function Home() {
   return (
     <main>
-    <div style={{ fontFamily: 'Kanit',
-      }}>
+    <div style={{ fontFamily: 'Kanit', scrollBehavior: 'smooth',scrollPadding: '70px'}}>
       <div style={{ position: "fixed", zIndex: -1, overflow: "hidden", backgroundAttachment: "fixed"}}>
         <Image 
           alt="Background Image" 
