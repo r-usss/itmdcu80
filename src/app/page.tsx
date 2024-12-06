@@ -5,7 +5,6 @@ import Members from "./components/Members";
 import bgsmcu from "/public/bg.jpg";
 import transparent from "/public/1.png";
 
-
 // import smcu from "/public/smcu.png"
 
 //*****แก้*********
@@ -20,108 +19,105 @@ import transparent from "/public/1.png";
 //dont commit with error
 //styling ex ig->logo, email-> e-Mail
 
-
 import itlogo from "/public/it_logo.png";
 
 export default function Home() {
   return (
     <main>
-      <div style={{ position: 'relative', zIndex: 1, overflow: 'hidden'}}>
-       
-       </div>
-       <div style={{ position: 'fixed', zIndex: -1, overflow: 'hidden',backgroundAttachment: 'fixed'}}>
-      <Image
-        alt="Background Image"
-        src={bgsmcu}
-        width={1700}
-        height={1700}
-        />
+      <div
+        style={{ position: "relative", zIndex: 1, overflow: "hidden" }}
+      ></div>
+      <div
+        style={{
+          position: "fixed",
+          zIndex: -1,
+          overflow: "hidden",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <Image alt="Background Image" src={bgsmcu} width={1700} height={1700} />
       </div>
-     
 
-     
-      <div style={{ position: 'relative', zIndex: 1, overflow: 'hidden'}}>
-      <Navbar />
-      <Image
-        alt="transparent"
-        src={transparent}
-        width={500}
-        height={500}
-        />
-      <div className="text-center">
-      <div style={{ backgroundColor : 'white', width: '100vw'}}>
-      
-        <h2 id="home" className="text-center pt-14">
-          <div className="home">
-            <Image
-              className="mx-auto"
-              src={itlogo}
-              alt="it_smcu"
-              width={250}
-              height={250}
-            />
-          </div>
-        
+      <div style={{ position: "relative", zIndex: 1, overflow: "hidden" }}>
+        <Navbar />
+        <Image alt="transparent" src={transparent} width={500} height={500} />
+        <div className="text-center">
+          <div style={{ backgroundColor: "white", width: "100vw" }}>
+            <h2 id="home" className="text-center pt-14">
+              <div className="home">
+                <Image
+                  className="mx-auto"
+                  src={itlogo}
+                  alt="it_smcu"
+                  width={250}
+                  height={250}
+                />
+              </div>
 
-          <div className="text-4xl lg:text-6xl font-bold pt-5">IT Division</div>
-            <div className="text-4xl lg:text-6xl font-bold">
-            The Student Union of Faculty of Medicine,
-            <br/>Chulalongkorn University
-            </div>
-        </h2>
-        <br/>
+              <div className="text-4xl lg:text-6xl font-bold pt-5">
+                IT Division
+              </div>
+              <div className="text-4xl lg:text-6xl font-bold">
+                The Student Union of Faculty of Medicine,
+                <br />
+                Chulalongkorn University
+              </div>
+            </h2>
+            <br />
           </div>
 
-        <div style={{ backgroundColor : 'rgb(67, 160, 71)', width: '100vw'}}>
-        <h2 id="aboutus" className="text-white">
-          <div className="text-2xl font-bold pt-5">About us</div>
-        <p className="text-lg ">
-          ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-          พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-          เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ
-          ไปด้วยกัน <br/> ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
-          ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
-          พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google
-          workspace <br/> พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ ในคณะไม่ว่าจะเป็น AMSci,
-          ANAN DAY, MDCU Voice และอื่น ๆ นอกจากนี้พวกเรายังสนใจใน computer
-          science, data science, machine learning และ AI
-          <br/>เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
-          ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
-          !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-          <br/>พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-          เพื่อจัดกิจกรรมสนุก ๆ สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ
-          ไปด้วยกัน
-        </p>
-        </h2>
+          <div style={{ backgroundColor: "rgb(67, 160, 71)", width: "100vw" }}>
+            <h2 id="aboutus" className="text-white">
+              <div className="text-2xl font-bold pt-5">About us</div>
+              <p className="text-lg ">
+                ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                เพื่อจัดกิจกรรมสนุก ๆ
+                สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน <br />{" "}
+                ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
+                ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
+                พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google
+                workspace <br /> พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ
+                ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ
+                นอกจากนี้พวกเรายังสนใจใน computer science, data science, machine
+                learning และ AI
+                <br />
+                เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
+                ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
+                !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                <br />
+                พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                เพื่อจัดกิจกรรมสนุก ๆ
+                สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+              </p>
+            </h2>
 
-        <h2 id="location" className="text-white" >
-          <div className="text-2xl font-bold pt-5">Location</div>
-        
+            <h2 id="location" className="text-white">
+              <div className="text-2xl font-bold pt-5">Location</div>
 
-        <p>
-          <Link href="https://maps.app.goo.gl/Qg6S6kzAWEeu3U2y5">
-            คณะเเพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
-          </Link>
-          1873 ถ. พระรามที่ 4 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330
-        </p>
-        </h2>
-        <h2 id="contact" className="text-white" >
-          <div className="text-2xl font-bold pt-5">Contact</div>
-        
-        <h5>Email : itdivision@docchula.com</h5>
-        </h2>
-        <br/>
+              <p>
+                <Link href="https://maps.app.goo.gl/Qg6S6kzAWEeu3U2y5">
+                  คณะเเพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
+                </Link>
+                1873 ถ. พระรามที่ 4 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330
+              </p>
+            </h2>
+            <h2 id="contact" className="text-white">
+              <div className="text-2xl font-bold pt-5">Contact</div>
+
+              <h5>Email : itdivision@docchula.com</h5>
+            </h2>
+            <br />
+          </div>
+
+          <div style={{ backgroundColor: "white", width: "100vw" }}>
+            <h2 id="teammembers">
+              <div className="text-2xl font-bold pt-5"> Team members</div>
+            </h2>
+
+            <Members />
+          </div>
         </div>
-
-        <div style={{ backgroundColor : 'white', width: '100vw'}}>
-        <h2 id="teammembers">
-          <div className="text-2xl font-bold pt-5"> Team members</div>
-        </h2>
-       
-       
-      <Members />
-      </div>
-      </div>
       </div>
     </main>
   );
