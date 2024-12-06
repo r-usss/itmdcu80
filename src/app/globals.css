@@ -1,38 +1,21 @@
-@tailwind base;
+
+*@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face
 
-@font-face {
-  font-family: 'Kanit';
-  src: url(./Kanit/Kanit-Regular.ttf);
-}
-
-*{
+/*{
   scroll-behavior: smooth;
   scroll-padding: 70px;
   font-family: "Kanit";
 }
-
-.flex{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
+/*{
+  src: url(./Kanit/Kanit-Regular.ttf)
 }
 
 
-.flex{
-  position: fixed;
-  
-  width: 100%;
-  /*background-color: rgb(2,105,55);
-  padding: 10px;*/
-  right: 0;
-  left: 0;
-}
+
+
   
   
   

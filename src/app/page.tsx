@@ -5,6 +5,10 @@ import Members from "./components/Members";
 import bgsmcu from "/public/bg.jpg";
 import transparent from "/public/1.png";
 
+
+    
+
+
 // import smcu from "/public/smcu.png"
 
 //*****แก้*********
@@ -24,18 +28,15 @@ import itlogo from "/public/it_logo.png";
 export default function Home() {
   return (
     <main>
-      <div
-        style={{ position: "relative", zIndex: 1, overflow: "hidden" }}
-      ></div>
-      <div
-        style={{
-          position: "fixed",
-          zIndex: -1,
-          overflow: "hidden",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <Image alt="Background Image" src={bgsmcu} width={1700} height={1700} />
+    <div style={{ fontFamily: 'Kanit',
+      }}>
+      <div style={{ position: "fixed", zIndex: -1, overflow: "hidden", backgroundAttachment: "fixed"}}>
+        <Image 
+          alt="Background Image" 
+          src={bgsmcu} 
+          width={1700} 
+          height={1700} 
+        />
       </div>
 
       <div style={{ position: "relative", zIndex: 1, overflow: "hidden" }}>
@@ -73,7 +74,7 @@ export default function Home() {
                 ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
                 พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
                 เพื่อจัดกิจกรรมสนุก ๆ
-                สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน <br />{" "}
+                สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน <br />
                 ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
                 ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
                 พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ google
@@ -119,6 +120,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </main>
   );
 }

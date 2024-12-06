@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="flex">
+      <div className="flex" style={{position: 'fixed', right: 0,left: 0}}>
         <div className="h-12 bg-white rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
