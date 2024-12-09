@@ -2,11 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Members from "./components/Members";
+import Location from "./components/Location";
 import bgsmcu from "/public/bg.jpg";
 import transparent from "/public/1.png";
-
-
-    
 
 
 // import smcu from "/public/smcu.png"
@@ -92,16 +90,7 @@ export default function Home() {
               </p>
             </h2>
 
-            <h2 id="location" className="text-white">
-              <div className="text-2xl font-bold pt-5">Location</div>
-
-              <p>
-                <Link href="https://maps.app.goo.gl/Qg6S6kzAWEeu3U2y5">
-                  คณะเเพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
-                </Link>
-                1873 ถ. พระรามที่ 4 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330
-              </p>
-            </h2>
+            <Location />
             <h2 id="contact" className="text-white">
               <div className="text-2xl font-bold pt-5">Contact</div>
 
@@ -114,7 +103,6 @@ export default function Home() {
             <h2 id="teammembers">
               <div className="text-2xl font-bold pt-5"> Team members</div>
             </h2>
-
             <Members />
           </div>
         </div>
