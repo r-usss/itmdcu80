@@ -2,19 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face
 
-/*{
+@font-face {
+  font-family: 'Kanit';
+  src: url(./Kanit/Kanit-Regular.ttf);
+}
+
+*{
   scroll-behavior: smooth;
-  scroll-padding: 70px;
+  scroll-padding: 50px;
   font-family: "Kanit";
-}
-/*{
-  src: url(./Kanit/Kanit-Regular.ttf)
-}
-
-
-
+};
 
   
   
