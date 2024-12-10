@@ -10,15 +10,18 @@ export default function Members() {
         {"name" : "ศศิษา ปานพรหมมินทร์", "nickname" : "บลิ้งค์", "email":"sasisa.blink@dochula.com", "ig":"sasisap"}
     ]
     return (
-        <>
+        <>   
+          <div className="bg-white dark:text-white dark:bg-gray-500">
             {list.map((item, index)=>(
-                <div className="mt-5" key={item.name}>
+                <div className="pt-5 " key={item.name}>
                     <p>profile picture</p>
                     <p>{item.name} ({item.nickname})</p>
                     <p>E-Mail : {item.email}</p>
                     <p>IG : {item.ig}</p>
                 </div>
+           
         ))}
+          </div>
         </>
     )
 }
