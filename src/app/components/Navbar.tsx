@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
       </div>
       {isOpen && (
         <div
-          className="rounded-lg flex flex-col items-center bg-pink-400 fixed md:hidden my-12 mx-5"
+          className="rounded-lg flex flex-col items-center bg-white fixed md:hidden my-14 mx-5 shadow-2xl"
           style={{ position: "fixed", right: 0, left: 0 }}
         >
           {list.map((item, index) => (
