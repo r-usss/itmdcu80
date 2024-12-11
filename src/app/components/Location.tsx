@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Location() {
   return (
     <>
-      <h2 id="location" className="text-white">
+      <h2 id="location" className="text-white dark:text-dark dark:bg-pink-400 pb-10">
         <div className="text-2xl font-bold pt-5">Location</div>
 
         <p>
