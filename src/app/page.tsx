@@ -31,18 +31,18 @@ export default function Home() {
         <Image 
           alt="Background Image" 
           src={bgsmcu} 
-          width={1700} 
-          height={1700} 
+          width={1900} 
+          height={1900} 
         />
       </div>
 
       <div style={{ position: "relative", zIndex: 1, overflow: "hidden" }}>
         <Navbar />
         <Image alt="transparent" src={transparent} width={500} height={500} />
-        <div className="text-center">
-          <div style={{ backgroundColor: "white", width: "100vw" }}>
-            <h2 id="home" className="text-center pt-14">
-              <div className="home">
+        <div className=" text-center ">
+        <div style={{ backgroundColor: "white", width: "100vw" }}> 
+            <div id="home" className=" bg-white dark:text-white dark:bg-gray-500 pb-16 text-center pt-14  ">
+              
                 <Image
                   className="mx-auto"
                   src={itlogo}
@@ -50,7 +50,6 @@ export default function Home() {
                   width={250}
                   height={250}
                 />
-              </div>
 
               <div className="text-4xl lg:text-6xl font-bold pt-5">
                 IT Division
@@ -60,12 +59,13 @@ export default function Home() {
                 <br />
                 Chulalongkorn University
               </div>
-            </h2>
-            <br />
-          </div>
+              <br/>
+            </div>
+        </div>    
+          
 
           <div style={{ backgroundColor: "rgb(67, 160, 71)", width: "100vw" }}>
-            <h2 id="aboutus" className="text-white ml-8 mr-8">
+            <h2 id="aboutus" className="text-white dark:text-dark dark:bg-pink-400 pl-16 pr-16">
               <div className="text-2xl font-bold pt-5">About us</div>
               <p className="text-lg ">
                 ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
@@ -89,17 +89,16 @@ export default function Home() {
             </h2>
 
             <Location />
-            <h2 id="contact" className="text-white">
+            <h2 id="contact" className="text-white dark:text-dark dark:bg-pink-400 pb-10">
               <div className="text-2xl font-bold pt-5">Contact</div>
 
               <h5>Email : itdivision@docchula.com</h5>
             </h2>
-            <br />
           </div>
 
           <div style={{ backgroundColor: "white", width: "100vw" }}>
             <h2 id="teammembers">
-              <div className="text-2xl font-bold pt-5"> Team members</div>
+              <div className="text-2xl font-bold pt-5 dark:text-white dark:bg-gray-500 pb-5"> Team members</div>
             </h2>
             <Members />
           </div>

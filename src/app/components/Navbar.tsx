@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import smcu from "/public/smcu.png";
+import ThemeToggle from "./ThemeToggle";
+
 
 const Navbar: React.FC = () => {
   const list = [
-    { sec: "Home", scroll: "#home" },
+    { sec: "  Home", scroll: "#home" },
     { sec: "About Us", scroll: "#aboutus" },
     { sec: "Location", scroll: "#location" },
     { sec: "Contact", scroll: "#contact" },
@@ -21,25 +23,30 @@ const Navbar: React.FC = () => {
     <>
       {/* for desktop */}
       <div className="flex" style={{ position: "fixed", right: 0, left: 0 }}>
-        <div className="h-12 bg-white rounded-l-lg">
+        <div className="h-12 bg-white dark:bg-gray-500 rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
-        <div className="w-1/6 h-12 bg-white text-left">
+        <div className="w-1/6 h-12 bg-white dark:bg-gray-500 text-left dark:text-white pt-2" >
           <strong> SMCU IT </strong>
         </div>
+        
         {list.map((item, index) => (
-          <div className="hover:text-white hidden md:flex w-1/6 bg-green-600 h-12 text-center">
+          <div className="hover:text-white dark:bg-pink-400 pl-8 pt-2 md:flex w-1/6 bg-green-600  h-12 text-center ">
             <a href={item.scroll}>
               <strong>{item.sec}</strong>
             </a>
           </div>
+        
         ))}
+        <div className="md:flex bg-green-600 dark:bg-pink-400 h-12 rounded-r-lg" >
+          <ThemeToggle />
+        </div>
 
         {/* for mobile */}
-        <div className="md:hidden w-5/6 bg-green-600">
+        <div className="md:hidden w-5/6 bg-green-600 dark:bg-grey-900 ">
           <button>
             <button
-              className="text-black focus:outline-none"
+              className="text-black dark:text-white focus:outline-none"
               onClick={toggleMenu}
             >
               <svg
