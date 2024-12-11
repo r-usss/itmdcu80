@@ -21,7 +21,10 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* for desktop */}
-      <div className="flex" style={{ position: "fixed", right: 0, left: 0 }}>
+      <div
+        className="flex shadow-2xl"
+        style={{ position: "fixed", right: 0, left: 0 }}
+      >
         <div className="h-12 bg-white dark:bg-gray-500 rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
@@ -42,7 +45,6 @@ const Navbar: React.FC = () => {
 
         {/* for mobile */}
         <div className="md:hidden w-5/6 bg-green-600 dark:bg-grey-900 ">
-          <button>
             <button
               className="text-black dark:text-white focus:outline-none"
               onClick={toggleMenu}
@@ -72,7 +74,6 @@ const Navbar: React.FC = () => {
                 )}
               </svg>
             </button>
-          </button>
         </div>
       </div>
       {isOpen && (
