@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* for mobile */}
-        <div className="md:hidden w-5/6 bg-green-600 dark:bg-grey-900 ">
+        <div className="md:hidden w-5/6 bg-green-600 dark:bg-pink-400 ">
           <button>
             <button
               className="text-black dark:text-white focus:outline-none"
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
       </div>
       {isOpen && (
         <div
-          className="rounded-lg flex flex-col items-center bg-white fixed md:hidden my-14 mx-5 shadow-2xl"
+          className="rounded-r-lg flex flex-col items-center bg-white dark:bg-pink-400 fixed md:hidden my-14 mx-5 shadow-2xl"
           style={{ position: "fixed", right: 0, left: 0 }}
         >
           {list.map((item, index) => (
@@ -89,8 +89,11 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           ))}
+          
         </div>
+       
       )}
+      
     </>
   );
 };
