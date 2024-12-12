@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <div className="w-1/6 h-12 bg-white dark:bg-gray-500 text-left dark:text-white pt-2">
           <strong> SMCU IT </strong>
         </div>
-
+        
         {list.map((item, index) => (
           <div className="hidden hover:text-white dark:bg-pink-400 pl-8 pt-2 md:flex w-1/6 bg-green-600  h-12 text-center ">
             <a href={item.scroll}>
@@ -39,14 +39,17 @@ const Navbar: React.FC = () => {
             </a>
           </div>
         ))}
-        <div className="md:flex bg-green-600 dark:bg-pink-400 h-12 rounded-r-lg">
+        <div className="hidden md:flex bg-green-600 dark:bg-pink-400 h-12 rounded-r-lg">
           <ThemeToggle />
         </div>
 
         {/* for mobile */}
-        <div className="md:hidden w-5/6 bg-green-600 dark:bg-grey-900 ">
+        <div className="md:hidden bg-green-600 dark:bg-pink-400 h-12 pl-8 pt-1  ">
+            <ThemeToggle />
+        </div>
+        <div className="md:hidden w-5/6 bg-green-600 dark:bg-pink-400 rounded-r-lg">
             <button
-              className="text-black dark:text-white focus:outline-none"
+              className="text-black dark:text-white focus:outline-none "
               onClick={toggleMenu}
             >
               <svg
@@ -56,7 +59,8 @@ const Navbar: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-              >
+              > 
+                
                 {isOpen ? (
                   <path
                     // strokeLinecap="round"
@@ -78,7 +82,7 @@ const Navbar: React.FC = () => {
       </div>
       {isOpen && (
         <div
-          className="rounded-lg flex flex-col items-center bg-white fixed md:hidden my-14 mx-5 shadow-2xl"
+          className="rounded-lg rounded-r-rg flex flex-col items-center bg-white dark:bg-gray-500 dark:text-white fixed md:hidden my-14 mx-5 shadow-2xl"
           style={{ position: "fixed", right: 0, left: 0 }}
         >
           {list.map((item, index) => (
@@ -88,6 +92,7 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           ))}
+          
         </div>
       )}
     </>
