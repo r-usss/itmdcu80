@@ -25,15 +25,16 @@ const Navbar: React.FC = () => {
         className="flex shadow-2xl"
         style={{ position: "fixed", right: 0, left: 0 }}
       >
-        <div className="h-12 bg-white dark:bg-gray-500 rounded-l-lg">
+        <div className="flex items-center h-12 bg-white dark:bg-gray-500 rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
-        <div className="w-1/6 h-12 bg-white dark:bg-gray-500 text-left dark:text-white pt-2">
+        <div className="max-md:text-base max-md:w-40 flex items-center w-1/6 h-12 bg-white dark:bg-gray-500 text-left dark:text-white">
           <strong> SMCU IT </strong>
         </div>
         
         {list.map((item, index) => (
-          <div className="hidden hover:text-white dark:bg-pink-400 pl-8 pt-2 md:flex w-1/6 bg-green-600  h-12 text-center ">
+          <div key={index}
+          className="hidden hover:text-white dark:bg-pink-400 pt-2 md:flex w-1/6 bg-green-600  h-12 text-center justify-center">
             <a href={item.scroll}>
               <strong>{item.sec}</strong>
             </a>
@@ -86,7 +87,7 @@ const Navbar: React.FC = () => {
           style={{ position: "fixed", right: 0, left: 0 }}
         >
           {list.map((item, index) => (
-            <div className="hover:text-white pt-1 pb-1">
+            <div className="hover:text-white py-2">
               <a href={item.scroll}>
                 <strong>{item.sec}</strong>
               </a>

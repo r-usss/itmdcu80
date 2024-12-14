@@ -59,11 +59,11 @@ export default function Home() {
                   height={250}
                 />
 
-                <div className="text-4xl lg:text-6xl font-bold pt-5">
+                <div className="text-4xl lg:text-6xl font-bold pt-5 max-md:text-3xl">
                   IT Division
                 </div>
-                <div className="text-4xl lg:text-6xl font-bold">
-                  The Student Union of Faculty of Medicine,
+                <div className="text-4xl lg:text-6xl font-bold max-md:text-3xl">
+                  The Student Union of <br className="md:hidden"/>Faculty of Medicine,
                   <br />
                   Chulalongkorn University
                 </div>
@@ -76,9 +76,9 @@ export default function Home() {
             >
               <h2
                 id="aboutus"
-                className="text-white dark:text-dark dark:bg-pink-400 pl-16 pr-16"
+                className="text-white dark:text-dark dark:bg-pink-400 px-16 max-md:px-8"
               >
-                <div className="text-2xl font-bold pt-5">About us</div>
+                <div className="text-2xl font-bold py-5">About us</div>
                 <p className="text-lg ">
                   ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
                   พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
