@@ -21,6 +21,7 @@ import transparent from "/public/1.png";
 //styling ex ig->logo, email-> e-Mail
 
 import itlogo from "/public/it_logo.png";
+import Activities from "./components/Activities";
 
 export default function Home() {
   return (
@@ -96,6 +97,7 @@ export default function Home() {
                   พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
                   เพื่อจัดกิจกรรมสนุก ๆ
                   สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+                  <Activities />
                 </p>
               </h2>
 
