@@ -14,7 +14,9 @@
   font-family: "Kanit";
 };
 
-  
+::-webkit-scrollbar {
+  width:0px;
+}
   
   
 /* <link rel="preconnect" href="https://fonts.googleapis.com"> */
