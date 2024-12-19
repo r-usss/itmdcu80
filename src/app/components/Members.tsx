@@ -2,37 +2,97 @@ import Image from "next/image";
 import smcu from "/public/smcu.png";
 //import /image/pic1.webp from "/image/pic1.webp";
 //import moon from "/public/moon icon.png";
-import gmail from "/public/gmail.png";
+import email from "/public/email.svg";
+import instagram from "/public/instagram.svg";
+
+import { members2024 } from "../constants/memberslist";
 export default function Members() {
-    const list =[
-        {"name" : "ณภัทษร สุกใส", "nickname" : "กึ๊น", "email": "keinkunluk@gmail.com", "ig":"kein._.stagram", "image":"/image/pic1.webp"},
-        {"name" : "ธัทเดช กัลยพฤกษ์", "nickname" : "เอส", "email": "kanlayphrukthaddej@gmail.com", "ig":"ยังไม่ได้ใส่", "image":"/image/pic1.webp" },
-        {"name" : "พิชชาภา ลักษณ์เลิศกุล", "nickname" : "ชูก้า", "email": "pidchapa.lucklertkul@docchula.com", "ig":"ยังไม่ได้ใส่", "image":"/image/pic1.webp"},
-        {"name" : "ศิรดา อุทัยวัฒน์", "nickname" : "แนน", "email": "sirada.uth@docchula.com", "ig":"sira.uth", "image":"/image/pic1.webp"},
-        {"name" : "จันทร์วลัย เลี่ยนเครือ", "nickname" : "เกน", "email": "jennissa0811@docchula.com", "ig":"ยังไม่ได้ใส่","image":"/image/pic1.webp"},
-        {"name" : "วรวีร์ พัวพรพงษ์", "nickname" : "วินชี่", "email": "worawee.pua@docchula.com", "ig":"ยังไม่ได้ใส่", "image":"/image/pic1.webp"},
-        {"name" : "กัณณพงศ์ กาญจนกุลดำรง", "nickname" : "อาอัส", "email": "1234kannapongkarn@docchula.com", "ig":"ยังไม่ได้ใส่", "image":"/image/pic1.webp"},
-        {"name" : "ศศิษา ปานพรหมมินทร์", "nickname" : "บลิ้งค์", "email":"sasisa.blink@dochula.com", "ig":"sasisap", "image":"/image/pic1.webp"},
-    ]
-    return (
-        <>   
-          <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid grid-cols-3 gap-4" >
-            {list.map((item, index)=>(
-                <div className="flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-green-600 "  key={item.name} >
-                    <img 
-                        className=" rounded-full object-cover mb-2 mt-2  "
-                        src={item.image} 
-                        alt={`${item.name}'s profile`}
-                        width={96} 
-                        height={96} 
-                    />
-                    <p >{item.name} ({item.nickname})</p>
-                    <p>email : {item.email}</p>
-                    <p>IG : {item.ig}</p>
+  return (
+    <>
+      <div className="font-bold text-2xl bg-white dark:text-white dark:bg-gray-500">
+        Acadaemic Year {members2024.year}
+      </div>
+      <div className="font-bold text-xl bg-white dark:text-white dark:bg-gray-500 py-2">
+        Executive team ยังใส่ไม่ครบ
+      </div>
+      <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
+        {members2024.sections.map((item, index) => (
+          <>
+            {item.role && (
+                <div
+                  className="flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-white shadow-xl"
+                  key={item.name}
+                >
+                  <div className="text-xl">{item.role}</div>
+                  <img
+                    className=" rounded-full object-cover mb-2 mt-2  "
+                    src={item.image}
+                    alt={`${item.name}'s profile`}
+                    width={96}
+                    height={96}
+                  />
+                  <p>
+                    {item.name} ({item.nickname})
+                  </p>
+                  <p className="flex">
+                    <Image src={email} alt="email" width={20} height={20} />
+                    {item.email}
+                  </p>
+                  {item.ig && (
+                    <p className="flex">
+                      <Image
+                        src={instagram}
+                        alt="instagram"
+                        width={25}
+                        height={25}
+                      />{" "}
+                      {item.ig}
+                    </p>
+                  )}
                 </div>
+              
+            )}
+          </>
         ))}
+      </div>
+
+      <div className="font-bold text-xl bg-white dark:text-white dark:bg-gray-500 py-2">
+        Core team
+      </div>
+      <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
+        {members2024.sections.map((item, index) => (
+          <>
+            {!item.role && (
+          <div
+            className="flex flex-col pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-white shadow-xl items-center"
+            key={item.name}
+          >
+            <img
+              className=" rounded-full object-cover mb-2 mt-2  "
+              src={item.image}
+              alt={`${item.name}'s profile`}
+              width={96}
+              height={96}
+            />
+            <p>
+              {item.name} ({item.nickname})
+            </p>
+            <p className="flex">
+              <Image src={email} alt="email" width={20} height={20} />
+              {item.email}
+            </p>
+            {item.ig && (
+              <p className="flex">
+                <Image src={instagram} alt="instagram" width={25} height={25} />{" "}
+                {item.ig}
+              </p>
+            )}
           </div>
-        </>
-    )
+          )}
+          </>
+        ))}
+      </div>
+    </>
+  );
 }
-//pl-10 mx-5 pt-5 
+//pl-10 mx-5 pt-5

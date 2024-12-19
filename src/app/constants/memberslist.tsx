@@ -1,0 +1,77 @@
+export const members2024 = {
+  // {
+  //   role:"",
+  //   name: "",
+  //   nickname: "",
+  //   email: "",
+  //   ig: "",
+  //   image: "",
+  // },
+  year:"2024 - 2025",
+  sections :[
+    {
+      role:"ประธานฝ่ายเทคโนโลยีสารสนเทศ",
+      name: "ปัญญวิชญ์ ปทุมหิรัญรักษ์",
+      nickname: "ปั้น",
+      email: "pun@docchula.com",
+      ig: "punpunyawish",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "ณภัทษร สุกใส",
+      nickname: "กึ๊น",
+      email: "keinkunluk@gmail.com",
+      ig: "kein._.stagram",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "ธัทเดช กัลยพฤกษ์",
+      nickname: "เอส",
+      email: "kanlayphrukthaddej@gmail.com",
+      ig: "",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "พิชชาภา ลักษณ์เลิศกุล",
+      nickname: "ชูก้า",
+      email: "pidchapa.lucklertkul@docchula.com",
+      ig: "",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "ศิรดา อุทัยวัฒน์",
+      nickname: "แนน",
+      email: "sirada.uth@docchula.com",
+      ig: "sira.uth",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "จันทร์วลัย เลี่ยนเครือ",
+      nickname: "เกน",
+      email: "jennissa0811@docchula.com",
+      ig: "",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "วรวีร์ พัวพรพงษ์",
+      nickname: "วินชี่",
+      email: "worawee.pua@docchula.com",
+      ig: "",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "กัณณพงศ์ กาญจนกุลดำรง",
+      nickname: "อาอัส",
+      email: "1234kannapongkarn@docchula.com",
+      ig: "",
+      image: "/image/pic1.webp",
+    },
+    {
+      name: "ศศิษา ปานพรหมมินทร์",
+      nickname: "บลิ้งค์",
+      email: "sasisa.blink@dochula.com",
+      ig: "sasisap",
+      image: "/image/pic1.webp",
+    },
+  ]
+};
