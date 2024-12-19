@@ -18,6 +18,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "ณภัทษร สุกใส",
       nickname: "กึ๊น",
       email: "keinkunluk@gmail.com",
@@ -25,6 +26,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "ธัทเดช กัลยพฤกษ์",
       nickname: "เอส",
       email: "kanlayphrukthaddej@gmail.com",
@@ -32,6 +34,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "พิชชาภา ลักษณ์เลิศกุล",
       nickname: "ชูก้า",
       email: "pidchapa.lucklertkul@docchula.com",
@@ -39,6 +42,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "ศิรดา อุทัยวัฒน์",
       nickname: "แนน",
       email: "sirada.uth@docchula.com",
@@ -46,6 +50,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "จันทร์วลัย เลี่ยนเครือ",
       nickname: "เกน",
       email: "jennissa0811@docchula.com",
@@ -53,6 +58,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "วรวีร์ พัวพรพงษ์",
       nickname: "วินชี่",
       email: "worawee.pua@docchula.com",
@@ -60,6 +66,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "กัณณพงศ์ กาญจนกุลดำรง",
       nickname: "อาอัส",
       email: "1234kannapongkarn@docchula.com",
@@ -67,6 +74,7 @@ export const members2024 = {
       image: "/image/pic1.webp",
     },
     {
+      role:"",
       name: "ศศิษา ปานพรหมมินทร์",
       nickname: "บลิ้งค์",
       email: "sasisa.blink@dochula.com",

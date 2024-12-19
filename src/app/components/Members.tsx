@@ -1,11 +1,8 @@
-import Image from "next/image";
-import smcu from "/public/smcu.png";
 //import /image/pic1.webp from "/image/pic1.webp";
 //import moon from "/public/moon icon.png";
-import email from "/public/email.svg";
-import instagram from "/public/instagram.svg";
 
 import { members2024 } from "../constants/memberslist";
+import MemberCard from "./MemberCard";
 export default function Members() {
   return (
     <>
@@ -19,43 +16,18 @@ export default function Members() {
         {members2024.sections.map((item, index) => (
           <>
             {item.role && (
-                <div
-                  className="flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-white shadow-xl"
-                  key={item.name}
-                >
-                  <div className="text-xl">{item.role}</div>
-                  <img
-                    className=" rounded-full object-cover mb-2 mt-2  "
-                    src={item.image}
-                    alt={`${item.name}'s profile`}
-                    width={96}
-                    height={96}
-                  />
-                  <p>
-                    {item.name} ({item.nickname})
-                  </p>
-                  <p className="flex">
-                    <Image src={email} alt="email" width={20} height={20} />
-                    {item.email}
-                  </p>
-                  {item.ig && (
-                    <p className="flex">
-                      <Image
-                        src={instagram}
-                        alt="instagram"
-                        width={25}
-                        height={25}
-                      />{" "}
-                      {item.ig}
-                    </p>
-                  )}
-                </div>
-              
+              <MemberCard
+                role={item.role}
+                name={item.name}
+                nickname={item.nickname}
+                email={item.email}
+                ig={item.ig}
+                image={item.image}
+              />
             )}
           </>
         ))}
       </div>
-
       <div className="font-bold text-xl bg-white dark:text-white dark:bg-gray-500 py-2">
         Core team
       </div>
@@ -63,35 +35,19 @@ export default function Members() {
         {members2024.sections.map((item, index) => (
           <>
             {!item.role && (
-          <div
-            className="flex flex-col pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-white shadow-xl items-center"
-            key={item.name}
-          >
-            <img
-              className=" rounded-full object-cover mb-2 mt-2  "
-              src={item.image}
-              alt={`${item.name}'s profile`}
-              width={96}
-              height={96}
-            />
-            <p>
-              {item.name} ({item.nickname})
-            </p>
-            <p className="flex">
-              <Image src={email} alt="email" width={20} height={20} />
-              {item.email}
-            </p>
-            {item.ig && (
-              <p className="flex">
-                <Image src={instagram} alt="instagram" width={25} height={25} />{" "}
-                {item.ig}
-              </p>
+              <MemberCard
+                role={item.role}
+                name={item.name}
+                nickname={item.nickname}
+                email={item.email}
+                ig={item.ig}
+                image={item.image}
+              />
             )}
-          </div>
-          )}
           </>
         ))}
       </div>
+      
     </>
   );
 }
