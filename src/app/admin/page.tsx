@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+// import Image from "next/image";
+import MemberCard from "../components/MemberCard";
 
 export default function Page() {
   const [users, setUsers] = useState([]);
@@ -23,18 +24,32 @@ export default function Page() {
         <div key={content.id}>
           <div className="inline-block mx-3 w-4">{content.id}</div>
           <div className="inline-block mx-3 w-14">{content.fname}</div>
-          {/* <div className="inline-block mx-3 w-14">{content.lname}</div> */}
+          <div className="inline-block mx-3 w-14">{content.lname}</div>
           <div className="inline-block mx-3 w-60">{content.username}</div>
           <img
-          className="inline-block"
+            className="inline-block"
             src={content.avatar}
             height={50}
             width={50}
             alt={content.username}
-          ></img>
+          />
         </div>
-        // {content.}
       ))}
+
+      <div className="mx-4">Preview</div>
+      <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
+
+      {users.map((content) => (
+        <MemberCard
+          role=""
+          name={content.fname}
+          nickname={content.lname}
+          email={content.username}
+          ig=""
+        //   image={content.avatar}
+        />
+      ))}
+      </div>
     </>
   );
 }
