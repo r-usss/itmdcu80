@@ -26,7 +26,7 @@ export default function MemberCard({
       </div> */}
       <div className="dark:border-none border-2 flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-pink-400 bg-white shadow-xl">
         {role && <div className="text-xl">{role}</div>}
-        <img
+        <Image
           className=" rounded-full object-cover mb-2 mt-2  "
           src={image}
           alt={`${name}'s profile`}

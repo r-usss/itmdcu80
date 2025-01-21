@@ -87,9 +87,9 @@ const Navbar: React.FC = () => {
           style={{ position: "fixed", right: 0, left: 0 }}
         >
           {list.map((item, index) => (
-            <div className="hover:text-white py-2">
+            <div key={index} className="hover:text-white py-2">
               <a href={item.scroll}>
-                <strong>{item.sec}</strong>
+                <strong >{item.sec}</strong>
               </a>
             </div>
           ))}

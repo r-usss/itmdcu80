@@ -23,7 +23,7 @@ export default function Activities() {
         <strong> ทำแล้ว </strong>
 
         {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard
+          <ActivitiesCard key={actIndex}
             status={actItem.status}
             image={actItem.image}
             act={actItem.act}
@@ -37,7 +37,7 @@ export default function Activities() {
         <strong className="text-left"> ทำอยู่ </strong>
 
         {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard
+          <ActivitiesCard key={actIndex}
             status={actItem.status}
             image={actItem.image}
             act={actItem.act}
@@ -47,7 +47,7 @@ export default function Activities() {
         ))}
         <strong> ทำต่อ </strong>
         {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard
+          <ActivitiesCard key={actIndex}
             status={actItem.status}
             image={actItem.image}
             act={actItem.act}
