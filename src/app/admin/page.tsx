@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <>
       <div className="mx-4">Admin</div>
-      {JSON.stringify(users)}
+      {/* {JSON.stringify(users)} */}
       {users.map((content, dataIndex) => (
         <>
           <div 
