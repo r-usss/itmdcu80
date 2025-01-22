@@ -25,7 +25,7 @@ export default function Page() {
         console.log(result);
         alert(result.message)
         if(result.stayus==='ok'){
-          window.location.href=''
+          window.location.href='/user'
         }
       });
     // console.log(data)
