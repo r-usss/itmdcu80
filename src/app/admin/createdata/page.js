@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Result } from "postcss";
 
 export default function Page() {
@@ -63,8 +64,10 @@ export default function Page() {
             name="username"
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="p-2 bg-slate-300 rounded-lg hover:bg-slate-400">Submit</button>
       </form>
+      <br/>
+      <Link href='/admin' className="p-2 bg-slate-300 rounded-lg hover:bg-slate-400">Back</Link>
     </div>
   );
 }
