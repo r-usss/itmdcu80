@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Result } from "postcss";
 
-export default function Page() {
+export default function Createdata() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
@@ -28,6 +28,7 @@ export default function Page() {
         if(result.stayus==='ok'){
           window.location.href='/user'
         }
+        window.location.reload();
       });
     // console.log(data)
     // console.log("Firstname:", event.target.fname.value);
@@ -66,8 +67,8 @@ export default function Page() {
         </div>
         <button type="submit" className="p-2 bg-slate-300 rounded-lg hover:bg-slate-400">Submit</button>
       </form>
-      <br/>
-      <Link href='/admin' className="p-2 bg-slate-300 rounded-lg hover:bg-slate-400">Back</Link>
+      {/* <br/> */}
+      {/* <Link href='/admin' className="p-2 bg-slate-300 rounded-lg hover:bg-slate-400">Back</Link> */}
     </div>
   );
 }
