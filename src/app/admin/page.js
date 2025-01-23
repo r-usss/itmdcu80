@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // import Image from "next/image";
 import Link from "next/link";
 import MemberCard from "../components/MemberCard";
-import Createdata from "./createdata/page";
+import Createdata from "./create/page";
 import Edit from "./edit/[id]/page";
 
 export default function Page() {
@@ -47,6 +47,10 @@ export default function Page() {
       <Link href="https://melivecode.com/crud/" className="m-10">
         https://melivecode.com/crud/
       </Link>
+      <br />
+      <Link className="bg-lime-400 rounded-lg px-2" href="/">
+        Home
+      </Link>
       {/* {JSON.stringify(users)} */}
       {/* <br />
       <br />
@@ -77,7 +81,12 @@ export default function Page() {
             >
               Delete
             </button>
-            <Link href={`/admin/edit/${content.id}`}className="bg-amber-200 rounded-lg px-3 m-2">Edit</Link>
+            <Link
+              href={`/admin/edit/${content.id}`}
+              className="bg-amber-200 rounded-lg px-3 m-2"
+            >
+              Edit
+            </Link>
           </div>
         ))}
       </div>
