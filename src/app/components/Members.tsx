@@ -6,13 +6,13 @@ import MemberCard from "./MemberCard";
 export default function Members() {
   return (
     <>
-      <div className="font-bold text-2xl bg-white dark:text-white dark:bg-gray-500">
+      <div className="font-bold text-2xl bg-white dark:text-white dark:bg-darkerpurple">
         Acadaemic Year {members2024.year}
       </div>
-      <div className="font-bold text-xl bg-white dark:text-white dark:bg-gray-500 py-2">
+      <div className="font-bold text-xl bg-white dark:text-white dark:bg-darkerpurple py-2">
         Executive team ยังใส่ไม่ครบ
       </div>
-      <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
+      <div className="bg-white dark:text-white dark:bg-darkerpurple px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
         {members2024.sections.map((item, index) => (
           <>
             {item.role && (
@@ -28,10 +28,10 @@ export default function Members() {
           </>
         ))}
       </div>
-      <div className="font-bold text-xl bg-white dark:text-white dark:bg-gray-500 py-2">
+      <div className="font-bold text-xl bg-white dark:text-white dark:bg-darkerpurple py-2">
         Core team
       </div>
-      <div className="bg-white dark:text-white dark:bg-gray-500 px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
+      <div className="bg-white dark:text-white dark:bg-darkerpurple px-10 pb-20 grid max-sm:grid-cols-1 md:grid-cols-3 grid-cols-2 gap-4">
         {members2024.sections.map((item, index) => (
           <>
             {!item.role && (

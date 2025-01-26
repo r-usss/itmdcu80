@@ -25,22 +25,22 @@ const Navbar: React.FC = () => {
         className="flex shadow-2xl"
         style={{ position: "fixed", right: 0, left: 0 }}
       >
-        <div className="flex items-center h-12 bg-white dark:bg-gray-500 rounded-l-lg">
+        <div className="flex items-center h-12 bg-white dark:bg-darkerpurple rounded-l-lg">
           <Image src={smcu} alt="smcu" width={50} height={50} />
         </div>
-        <div className="max-md:text-base max-md:w-40 flex items-center w-1/6 h-12 bg-white dark:bg-gray-500 text-left dark:text-white">
+        <div className="max-md:text-base max-md:w-40 flex items-center w-1/6 h-12 bg-white dark:bg-darkerpurple text-left dark:text-white">
           <strong> SMCU IT </strong>
         </div>
         
         {list.map((item, index) => (
           <div key={index}
-          className="hidden hover:text-white dark:bg-pink-400 pt-2 md:flex w-1/6 bg-green-600  h-12 text-center justify-center">
+          className="hidden hover:text-white dark:bg-purple pt-2 md:flex w-1/6 bg-green-600  h-12 text-center justify-center">
             <a href={item.scroll}>
               <strong>{item.sec}</strong>
             </a>
           </div>
         ))}
-        <div className="hidden md:flex bg-green-600 dark:bg-pink-400 h-12 rounded-r-lg">
+        <div className="hidden md:flex bg-green-600 dark:bg-purple h-12 rounded-r-lg">
           <ThemeToggle />
         </div>
 

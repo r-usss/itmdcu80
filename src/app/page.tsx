@@ -50,7 +50,7 @@ export default function Home() {
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <div
                 id="home"
-                className=" bg-white dark:text-white dark:bg-gray-500 pb-16 text-center pt-14  "
+                className=" bg-white dark:text-white dark:bg-darkerpurple pb-16 text-center pt-14  "
               >
                 <Image
                   className="mx-auto"
@@ -77,7 +77,8 @@ export default function Home() {
             >
               <h2
                 id="aboutus"
-                className="text-white dark:text-dark dark:bg-pink-400 px-16 max-md:px-8"
+                className="text-white dark:text-white dark:bg-darkpurple px-16 max-md:px-8"
+              
               >
                 <div className="text-2xl font-bold py-5">About us</div>
                 <p className="text-lg ">
@@ -104,7 +105,7 @@ export default function Home() {
               <Location />
               <h2
                 id="contact"
-                className="text-white dark:text-dark dark:bg-pink-400 pb-10"
+                className="text-white  dark:bg-darkpurple pb-10"
               >
                 <div className="text-2xl font-bold pt-5">Contact</div>
 
@@ -114,7 +115,7 @@ export default function Home() {
 
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <h2 id="teammembers">
-                <div className="text-2xl font-bold pt-5 dark:text-white dark:bg-gray-500 pb-5">
+                <div className="text-2xl font-bold pt-5 dark:text-white dark:bg-darkerpurple pb-5">
                   {" "}
                   Team members
                 </div>

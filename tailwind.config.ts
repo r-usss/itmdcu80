@@ -17,6 +17,9 @@ const config: Config = {
       colors:{
         "dark": '#232A3C',
         "medium": '#293245',
+        "darkpurple":  '#3B1C32',
+        "purple":  '#A64D79',
+        "darkerpurple": '#1A1A1D',
       }
     },
   },

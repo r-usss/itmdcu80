@@ -19,7 +19,7 @@ function ActivitiesCard({
   return (
     <div className=" flex mt-5 mx-2">
       {status === topic && (
-        <div className="w-3/6 bg-white dark:text-white dark:bg-gray-500 text-black rounded-xl text-left pl-3 ">
+        <div className="w-3/6 bg-white dark:text-white dark:bg-purple text-black rounded-xl text-left pl-3 ">
           <Image
             className=" mb-2 mt-2 mr-10 float-left rounded-xl"
             src={image}

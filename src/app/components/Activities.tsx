@@ -5,8 +5,8 @@ export default function Activities() {
   //import syringeLogo from "/image/syringe-logo.webp";
   return (
     <>
-      <div className="text-white dark:text-dark dark:bg-pink-400 ">
-        <div className="text-2xl font-bold py-10">Recent Activities</div>
+      <div className="text-white dark:text-dark dark:bg-darkpurple ">
+        <div className="text-white text-2xl font-bold py-10">Recent Activities</div>
 
         {/* test */}
         {/* {activitiesList.map((actItem, actIndex) => (
@@ -20,9 +20,9 @@ export default function Activities() {
         ))} */}
 
         {/* เสร็จแล้ว */}
-        <strong> ทำแล้ว </strong>
-
-        {activitiesList.map((actItem, actIndex) => (
+        
+        <div className="text-white text-2xl font-bold py-10">ทำแล้ว</div>  
+          {activitiesList.map((actItem, actIndex) => (
           <ActivitiesCard key={actIndex}
             status={actItem.status}
             image={actItem.image}
@@ -34,7 +34,7 @@ export default function Activities() {
 
         {/* ทำอยู่ */}
 
-        <strong className="text-left"> ทำอยู่ </strong>
+        <div className="text-white text-2xl font-bold py-10">ทำเสร็จ</div>  
 
         {activitiesList.map((actItem, actIndex) => (
           <ActivitiesCard key={actIndex}
@@ -45,7 +45,7 @@ export default function Activities() {
             topic="ongoing"
           />
         ))}
-        <strong> ทำต่อ </strong>
+        <div className="text-white text-2xl font-bold py-10">ทำอยู่</div>  
         {activitiesList.map((actItem, actIndex) => (
           <ActivitiesCard key={actIndex}
             status={actItem.status}

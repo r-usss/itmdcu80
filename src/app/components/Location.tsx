@@ -4,7 +4,7 @@ export default function Location() {
     <>
       <h2
         id="location"
-        className="text-white dark:text-dark dark:bg-pink-400 pb-10"
+        className="text-white dark:text-dark dark:bg-darkpurple pb-10"
       >
         <div className="text-2xl font-bold pt-5">Location</div>
         <iframe
