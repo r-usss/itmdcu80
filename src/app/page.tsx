@@ -1,57 +1,62 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Members from "./components/Members";
 import Location from "./components/Location";
+import Activities from "./components/Activities";
+
 import bgsmcu from "/public/bg.jpg";
 import transparent from "/public/1.png";
 import itlogo from "/public/it_logo.png";
-import Activities from "./components/Activities";
 
 export default function Home() {
   return (
     <main>
       <div>
-        {/* Background image container with vertical scroll */}
+        {/* Fixed background image - does NOT scroll */}
         <div
           style={{
             position: "fixed",
             zIndex: -1,
-            height: "100vh", // full viewport height
-            width: "100vw", // full viewport width
-            overflowY: "auto", // enable vertical scrolling
+            height: "100vh",
+            width: "100vw",
             backgroundAttachment: "fixed",
           }}
         >
           <Image
             alt="Background Image"
             src={bgsmcu}
-            width={1900}
-            height={1900}
-            style={{ display: "block", width: "100%", height: "auto" }}
+            fill
+            style={{ objectFit: "cover" }}
+            priority
           />
         </div>
 
         {/* Foreground content */}
-        <div style={{ position: "relative", zIndex: 1, overflow: "hidden" }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Navbar />
+
+          {/* Responsive transparent image */}
           <div
-            className="relative w-full max-w-md mx-auto"
+            className="relative w-full max-w-md mx-auto mb-0"
             style={{ aspectRatio: "1 / 1" }}
           >
             <Image
-              alt="transparent"
-              src={transparent}
-              fill
-               style={{ objectFit: "contain", display: "block" }}
-            />
+  alt="transparent"
+  src={transparent}
+  width={500}
+  height={500}
+  sizes="100vw"
+  style={{ width: "100%", height: "auto", display: "block" }}
+/>
+
           </div>
 
+          {/* Text content */}
           <div className="text-center">
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <div
                 id="home"
-                className="bg-white dark:text-white dark:bg-darkerpurple pb-16 text-center pt-14"
+                className="bg-white dark:text-white dark:bg-darkerpurple pb-8 pt-8 text-center"
               >
                 <Image
                   className="mx-auto"
@@ -59,6 +64,7 @@ export default function Home() {
                   alt="it_smcu"
                   width={250}
                   height={250}
+                  priority
                 />
 
                 <div className="text-4xl lg:text-6xl font-bold pt-5 max-md:text-3xl">
@@ -70,10 +76,8 @@ export default function Home() {
                   <br />
                   Chulalongkorn University
                 </div>
-                <br />
               </div>
             </div>
-            
 
             <div
               style={{ backgroundColor: "rgb(67, 160, 71)", width: "100vw" }}
@@ -105,9 +109,9 @@ export default function Home() {
               </h2>
 
               <Location />
+
               <h2 id="contact" className="text-white dark:bg-darkpurple pb-10">
                 <div className="text-2xl font-bold pt-5">Contact</div>
-
                 <h5>Email : itdivision@docchula.com</h5>
               </h2>
             </div>
@@ -115,7 +119,6 @@ export default function Home() {
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <h2 id="teammembers">
                 <div className="text-2xl font-bold pt-5 dark:text-white dark:bg-darkerpurple pb-5">
-                  {" "}
                   Team members
                 </div>
               </h2>

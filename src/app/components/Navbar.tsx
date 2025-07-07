@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
   style={{ height: 48 }} // consistent height
 >
   {/* Logo and Title container with white background */}
-  <div className="flex items-center h-full bg-white rounded-l-lg">
+  <div className="flex items-center h-full bg-white rounded-bl-lg rounded-br-lg">
     <div className="flex items-center justify-center px-3 h-full">
       <Image src={smcu} alt="smcu" width={40} height={40} />
     </div>
@@ -43,8 +43,8 @@ const Navbar: React.FC = () => {
         <li key={index} className="flex-1 h-full">
           <a
             href={item.scroll}
-            className="flex items-center justify-center w-full h-full text-black dark:text-white hover:bg-gray-600 hover:text-white px-3 transition-colors duration-300">
-          
+            className="flex items-center justify-center w-full h-full text-black dark:text-white hover:bg-gray-600 hover:text-white px-3 transition-colors duration-300"
+          >
             {item.sec}
           </a>
         </li>
@@ -55,13 +55,8 @@ const Navbar: React.FC = () => {
     </ul>
   </div>
 
-        {/* Mobile Theme Toggle */}
-        <div className="md:hidden flex items-center h-full bg-gray-800 px-4">
-          <ThemeToggle />
-        </div>
-
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center h-full bg-gray-800 px-4">
+        <div className="md:hidden flex items-center h-full transition-colors duration-300 px-4">
           <button
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -92,19 +87,25 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
+        
+        {/* Mobile Theme Toggle */}
+        <div className="md:hidden flex items-center h-full px-4 transition-colors duration-300">
+          <ThemeToggle />
+        </div>
+
       </nav>
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
           className="fixed top-12 left-0 right-0 bg-white dark:bg-gray-700 shadow-2xl rounded-b-lg z-40 flex flex-col"
-          style={{ margin: "0 1rem" }}
+          style={{ margin: "0 0rem" }}
         >
           {list.map((item, index) => (
             <a
               key={index}
               href={item.scroll}
-              className="px-4 py-3 border-b border-gray-200 dark:border-gray-600 text-center text-gray-800 dark:text-white hover:bg-green-600 hover:text-white font-semibold transition-colors duration-300"
+              className="py-3 border-b border-gray-200 dark:border-gray-600 text-center text-gray-800 dark:text-white hover:bg-gray-600 hover:text-white font-semibold transition-colors duration-300"
               onClick={() => setIsOpen(false)} // close menu on click
             >
               {item.sec}
