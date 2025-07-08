@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { useEffect } from "react";
+import Glide from "@glidejs/glide";
 
 interface ActivitiesCardProps {
   status: string;
@@ -16,21 +18,62 @@ function ActivitiesCard({
   detail,
   topic,
 }: ActivitiesCardProps) {
+  useEffect(() => {
+    const slider = new Glide(".glide-01", {
+      type: "slider",
+      focusAt: "center",
+      perView: 3,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 20,
+      breakpoints: {
+        1024: { perView: 2 },
+        600: { perView: 1 },
+      },
+    });
+
+    slider.mount();
+
+    return () => {
+      slider.destroy();
+    };
+  }, []);
+
   return (
-    <div className=" flex mt-5 mx-2">
-      {status === topic && (
-        <div className="w-3/6 bg-white dark:text-white dark:bg-purple text-black rounded-xl text-left pl-3 ">
-          <Image
-            className=" mb-2 mt-2 mr-10 float-left rounded-xl"
-            src={image}
-            alt={"pic"}
-            width={96}
-            height={96}
-          />
-          <p className="text-xl pt-3">{act}</p>
-          <p>{detail}</p>
-        </div>
-      )}
+    <div className="relative w-full glide-01 z-0">
+      <div className="overflow-hidden" data-glide-el="track">
+        <ul className="flex whitespace-nowrap relative w-full p-0">
+          {status === topic && (
+            <li className="inline-block w-1/3 px-4">
+              <a
+                href={"#"}
+                className="card bg-base-100 shadow-md rounded-lg overflow-hidden flex flex-col"
+              >
+                <figure>
+                  <Image
+                    width={500}
+                    height={500}
+                    src={image}
+                    alt={act}
+                    className="w-full object-cover h-48"
+                  />
+                </figure>
+                <div className="card-body flex flex-col flex-grow p-6">
+                  <h2 className="card-title text-xl font-bold mb-2">
+                    {act}
+                  </h2>
+                  <p className="flex-grow text-gray-700">{detail}</p>
+                  <div className="card-actions justify-end mt-4">
+                    <button className="btn btn-primary px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
     </div>
   );
 }
