@@ -41,22 +41,22 @@ export default function Home() {
             style={{ aspectRatio: "1 / 1" }}
           >
             <Image
-  alt="transparent"
-  src={transparent}
-  width={500}
-  height={500}
-  sizes="100vw"
-  style={{ width: "100%", height: "auto", display: "block" }}
-/>
+              alt="transparent"
+              src={transparent}
+              width={500}
+              height={500}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
 
           </div>
 
           {/* Text content */}
-          <div className="text-center">
+          <div className="w-full">
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <div
                 id="home"
-                className="bg-white dark:text-white dark:bg-darkerpurple pb-8 pt-8 text-center"
+                className="bg-white dark:text-white dark:bg-[#716D6D] pb-8 pt-8 text-center"
               >
                 <Image
                   className="mx-auto"
@@ -78,16 +78,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            <div
-              style={{ backgroundColor: "rgb(67, 160, 71)", width: "100vw" }}
-            >
-              <h2
-                id="aboutus"
-                className="text-white dark:text-white dark:bg-darkpurple px-16 max-md:px-8"
-              >
-                <div className="text-2xl font-bold py-5">About us</div>
-                <p className="text-lg">
+            <div style={{ backgroundColor: "white", width: "100vw" }}>
+              <section id="aboutus" className="text-black bg-[#F5C3C5] dark:text-black dark:bg-[#FCC0B4] max-md:px-8">
+                <h2 className="text-2xl font-bold py-5 px-5">About us</h2>
+                <p className="text-lg px-5">
                   ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
                   พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
                   เพื่อจัดกิจกรรมสนุก ๆ
@@ -104,13 +98,13 @@ export default function Home() {
                   พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
                   เพื่อจัดกิจกรรมสนุก ๆ
                   สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
-                  <Activities />
                 </p>
-              </h2>
+                <Activities />
+              </section>
 
               <Location />
 
-              <h2 id="contact" className="text-white dark:bg-darkpurple pb-10">
+              <h2 id="contact" className="text-black dark:bg-darkpurple pb-10">
                 <div className="text-2xl font-bold pt-5">Contact</div>
                 <h5>Email : itdivision@docchula.com</h5>
               </h2>
@@ -128,5 +122,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  );
+  )
 }
