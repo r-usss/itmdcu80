@@ -23,7 +23,7 @@ const ActivitiesCarousel: React.FC<ActivitiesCarouselProps> = ({ activities }) =
       type: "slider",
       focusAt: "center",
       perView: 3,
-      autoplay: 3000,
+      autoplay: 20000,
       animationDuration: 700,
       gap: 20,
       breakpoints: {
