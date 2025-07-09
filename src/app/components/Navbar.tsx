@@ -7,10 +7,10 @@ import ThemeToggle from "./ThemeToggle";
 const Navbar: React.FC = () => {
   const list = [
     { sec: "Home", scroll: "#home" },
-    { sec: "About Us", scroll: "#aboutus" },
+    { sec: "AboutUs", scroll: "#aboutus" },
     { sec: "Location", scroll: "#location" },
     { sec: "Contact", scroll: "#contact" },
-    { sec: "Team members", scroll: "#teammembers" },
+    { sec: "TeamMembers", scroll: "#teammembers" },
   ];
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,38 +22,38 @@ const Navbar: React.FC = () => {
     <>
       {/* Navbar container */}
       <nav
-  className="fixed top-0 left-0 right-0 flex items-center shadow-2xl backdrop-blur-md bg-transparent dark:bg-transparent z-50"
-  style={{ height: 48 }} // consistent height
->
-  {/* Logo and Title container with white background */}
-  <div className="flex items-center h-full bg-white rounded-bl-lg rounded-br-lg">
-    <div className="flex items-center justify-center px-3 h-full">
-      <Image src={smcu} alt="smcu" width={40} height={40} />
-    </div>
+        className="fixed top-0 left-0 right-0 flex items-center shadow-2xl backdrop-blur-md bg-transparent dark:bg-transparent z-50"
+        style={{ height: 48 }} // consistent height
+      >
+        {/* Logo and Title container with white background */}
+        <div className="flex items-center h-full bg-white rounded-bl-lg rounded-br-lg">
+          <div className="flex items-center justify-center px-3 h-full">
+            <Image src={smcu} alt="smcu" width={40} height={40} />
+          </div>
 
-    <div className="hidden md:flex items-center px-4 h-full w-40 text-left text-black font-bold">
-      <span>SMCU IT</span>
-    </div>
-  </div>
+          <div className="hidden md:flex items-center px-4 h-full w-40 text-left text-black font-bold">
+            <span>SMCU IT</span>
+          </div>
+        </div>
 
-  {/* Desktop Menu */}
-  <div className="hidden md:flex flex-grow h-full">
-    <ul className="flex w-full h-full">
-      {list.map((item, index) => (
-        <li key={index} className="flex-1 h-full">
-          <a
-            href={item.scroll}
-            className="flex items-center justify-center w-full h-full text-black dark:text-white hover:bg-gray-600 hover:text-white px-3 transition-colors duration-300"
-          >
-            {item.sec}
-          </a>
-        </li>
-      ))}
-      <li className="flex items-center justify-center h-full hover:bg-gray-600 hover:text-white rounded-r-lg px-3 transition-colors duration-300">
-        <ThemeToggle />
-      </li>
-    </ul>
-  </div>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex flex-grow h-full">
+          <ul className="flex w-full h-full">
+            {list.map((item, index) => (
+              <li key={index} className="flex-1 h-full">
+                <a
+                  href={item.scroll}
+                  className="flex items-center justify-center w-full h-full text-black dark:text-white hover:bg-gray-600 hover:text-white px-3 transition-colors duration-300"
+                >
+                  {item.sec}
+                </a>
+              </li>
+            ))}
+            <li className="flex items-center justify-center h-full hover:bg-gray-600 hover:text-white rounded-r-lg px-3 transition-colors duration-300">
+              <ThemeToggle />
+            </li>
+          </ul>
+        </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center h-full transition-colors duration-300 px-4">
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
-        
+
         {/* Mobile Theme Toggle */}
         <div className="md:hidden flex items-center h-full px-4 transition-colors duration-300">
           <ThemeToggle />

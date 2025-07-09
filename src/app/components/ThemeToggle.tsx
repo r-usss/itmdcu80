@@ -23,7 +23,7 @@ const ThemeToggle = () => {
         }
     }, [darkMode]);
     return (
-        <div className="relative w-16 h-8 flex item-center bg-gray-500 cursor-pointer rounded-r-lg rounded-l-lg p-1 mt-1 mr-4"
+        <div className="relative w-16 h-8 flex item-center bg-[#F5C3C5] dark:bg-purple cursor-pointer rounded-r-lg rounded-l-lg p-1 mt-1 mr-4"
             onClick={() => setDarkMode(!darkMode)}
         >
             <Image className="text-white"

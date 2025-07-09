@@ -56,7 +56,7 @@ export default function Home() {
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <div
                 id="home"
-                className="bg-white dark:text-white dark:bg-[#716D6D] pb-8 pt-8 text-center"
+                className="bg-white dark:text-white dark:bg-darkerpurple bg-white shadow-xl pb-8 pt-8 text-center"
               >
                 <Image
                   className="mx-auto"
@@ -79,32 +79,34 @@ export default function Home() {
               </div>
             </div>
             <div style={{ backgroundColor: "white", width: "100vw" }}>
-              <section id="aboutus" className="text-black bg-[#F5C3C5] dark:text-black dark:bg-[#FCC0B4] max-md:px-8">
-                <h2 className="text-2xl font-bold py-5 px-5">About us</h2>
-                <p className="text-lg px-5">
-                  ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-                  พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-                  เพื่อจัดกิจกรรมสนุก ๆ
-                  สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
-                  ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
-                  ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
-                  พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ
-                  google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ
-                  ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ
-                  นอกจากนี้พวกเรายังสนใจใน computer science, data science,
-                  machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
-                  ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
-                  !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-                  พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-                  เพื่อจัดกิจกรรมสนุก ๆ
-                  สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
-                </p>
+              <section id="aboutus" >
+                <div className="text-black bg-[#F5C3C5] dark:text-white dark:bg-purple max-md:px-8">
+                  <h2 className="text-2xl font-bold py-5 px-5">About us</h2>
+                  <p className="text-lg px-5 pb-8">
+                    ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                    พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                    เพื่อจัดกิจกรรมสนุก ๆ
+                    สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+                    ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
+                    ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
+                    พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ
+                    google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ
+                    ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ
+                    นอกจากนี้พวกเรายังสนใจใน computer science, data science,
+                    machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
+                    ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
+                    !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                    พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                    เพื่อจัดกิจกรรมสนุก ๆ
+                    สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+                  </p>
+                </div>
                 <Activities />
               </section>
 
               <Location />
 
-              <h2 id="contact" className="text-black dark:bg-darkpurple pb-10">
+              <h2 id="contact" className="text-black bg-[#F5C3C5] dark:text-white dark:bg-purple pb-10">
                 <div className="text-2xl font-bold pt-5">Contact</div>
                 <h5>Email : itdivision@docchula.com</h5>
               </h2>
