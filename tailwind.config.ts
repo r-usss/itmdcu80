@@ -6,7 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:'class',
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
@@ -14,16 +14,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors:{
+      colors: {
         "dark": '#232A3C',
         "medium": '#293245',
-        "darkpurple":  '#3B1C32',
-        "purple":  '#A64D79',
+        "darkpink": '#716D6D',
+        "purple": '#A64D79',
         "darkerpurple": '#1A1A1D',
-      }
+      },
+      backgroundColor: {
+        "dark": '#232A3C',
+        "medium": '#293245',
+        "darkpink": '#716D6D',
+        "purple": '#A64D79',
+        "darkerpurple": '#1A1A1D',
+      },
     },
-  },
-  plugins: [],
-  
-};
+    plugins: [],
+
+  }
+}
 export default config;

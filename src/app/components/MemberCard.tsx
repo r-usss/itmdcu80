@@ -24,7 +24,7 @@ export default function MemberCard({
       {/* <div>
         Hello {name} {role} {nickname} {email} {ig} {image}
       </div> */}
-      <div className="dark:border-none border-2 flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-purple bg-white shadow-xl">
+      <div className="dark:border-none border-2 flex flex-col items-center pb-5 rounded-l-lg rounded-r-lg dark:text-dark dark:bg-purple bg-[#F5C3C5] shadow-xl">
         {role && <div className="text-xl">{role}</div>}
         <Image
           className=" rounded-full object-cover mb-2 mt-2  "

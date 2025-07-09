@@ -1,61 +1,28 @@
+import React from "react";
 import { activitiesList } from "../constants/actlist";
-import ActivitiesCard from "./ActivitiesCard";
+import ActivitiesCarousel from "./ActivitiesCard";
+import Image from "next/image";
 export default function Activities() {
-  //import Image from "next/image";
-  //import syringeLogo from "/image/syringe-logo.webp";
   return (
-    <>
-      <div className="text-white dark:text-dark dark:bg-darkpurple ">
-        <div className="text-white text-2xl font-bold py-10">Recent Activities</div>
-
-        {/* test */}
-        {/* {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard
-            status={actItem.status}
-            image={actItem.image}
-            act={actItem.act}
-            detail={actItem.detail}
-            topic="finished"
-          />
-        ))} */}
-
-        {/* เสร็จแล้ว */}
-        
-        <div className="text-white text-2xl font-bold py-10">ทำแล้ว</div>  
-          {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard key={actIndex}
-            status={actItem.status}
-            image={actItem.image}
-            act={actItem.act}
-            detail={actItem.detail}
-            topic="finished"
-          />
-        ))}
-
-        {/* ทำอยู่ */}
-
-        <div className="text-white text-2xl font-bold py-10">ทำเสร็จ</div>  
-
-        {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard key={actIndex}
-            status={actItem.status}
-            image={actItem.image}
-            act={actItem.act}
-            detail={actItem.detail}
-            topic="ongoing"
-          />
-        ))}
-        <div className="text-white text-2xl font-bold py-10">ทำอยู่</div>  
-        {activitiesList.map((actItem, actIndex) => (
-          <ActivitiesCard key={actIndex}
-            status={actItem.status}
-            image={actItem.image}
-            act={actItem.act}
-            detail={actItem.detail}
-            topic="continue"
-          />
-        ))}
+    <div className="text-black bg-[#F5C3C5] dark:text-white dark:bg-purple">
+      <h2 className="text-2xl font-bold py-5 px-5">ทำแล้ว (Finished)</h2>
+      <div className="text-lg  w-full h-[30rem] relative p-10">
+        <ActivitiesCarousel activities={activitiesList.filter(a => a.status === "finished")} />
       </div>
-    </>
+
+
+      <h2 className="text-2xl font-bold py-10 px-5 relative z-10">ทำเสร็จ (Ongoing)</h2>
+      <div
+        className="text-lg w-full h-[30rem] bg-cover bg-center relative p-10"
+        style={{ backgroundImage: `url('/image/bgact.jpg')` }}
+      >
+        <ActivitiesCarousel activities={activitiesList.filter(a => a.status === "ongoing")} />
+      </div>
+
+      <h2 className="text-2xl font-bold py-5 px-5">ทำอยู่ (Continue)</h2>
+      <div className="text-lg  w-full h-[30rem] relative p-10">
+        <ActivitiesCarousel activities={activitiesList.filter(a => a.status === "continue")} />
+      </div>
+    </div>
   );
 }

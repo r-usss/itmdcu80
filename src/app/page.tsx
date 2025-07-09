@@ -1,56 +1,62 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Members from "./components/Members";
 import Location from "./components/Location";
+import Activities from "./components/Activities";
+
 import bgsmcu from "/public/bg.jpg";
 import transparent from "/public/1.png";
-
-// import smcu from "/public/smcu.png"
-
-//*****แก้*********
-//ไม่ค่อยใช้ br ลองใช้ mt-number
-//ถ้าใช้ tailwind ก็ใช้ไปทั้งหมด (ตอนนี้มี CSS รวมอยู่ด้วย)
-//const Navbar = () => { ถ้าใช้แบบนี้ใน components ก็ใช้ให้เหมือนกันทั้งหมด
-//code format ให้เหมือนกัน alt+shift+F
-//loop ส่วนที่ซำ้ๆกัน
-//<br /> ปิดในตัวมันเอง
-//https://tailwindui.com/?ref=top
-//find example of git commit message
-//dont commit with error
-//styling ex ig->logo, email-> e-Mail
-
 import itlogo from "/public/it_logo.png";
-import Activities from "./components/Activities";
 
 export default function Home() {
   return (
     <main>
       <div>
+        {/* Fixed background image - does NOT scroll */}
         <div
           style={{
             position: "fixed",
             zIndex: -1,
-            overflow: "hidden",
+            height: "100vh",
+            width: "100vw",
             backgroundAttachment: "fixed",
           }}
         >
           <Image
             alt="Background Image"
             src={bgsmcu}
-            width={1900}
-            height={1900}
+            fill
+            style={{ objectFit: "cover" }}
+            priority
           />
         </div>
 
-        <div style={{ position: "relative", zIndex: 1, overflow: "hidden" }}>
+        {/* Foreground content */}
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Navbar />
-          <Image alt="transparent" src={transparent} width={500} height={500} />
-          <div className=" text-center ">
+
+          {/* Responsive transparent image */}
+          <div
+            className="relative w-full max-w-md mx-auto mb-0"
+            style={{ aspectRatio: "1 / 1" }}
+          >
+            <Image
+              alt="transparent"
+              src={transparent}
+              width={500}
+              height={500}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+
+          </div>
+
+          {/* Text content */}
+          <div className="w-full">
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <div
                 id="home"
-                className=" bg-white dark:text-white dark:bg-darkerpurple pb-16 text-center pt-14  "
+                className="bg-white dark:text-white dark:bg-darkerpurple bg-white shadow-xl pb-8 pt-8 text-center"
               >
                 <Image
                   className="mx-auto"
@@ -58,57 +64,50 @@ export default function Home() {
                   alt="it_smcu"
                   width={250}
                   height={250}
+                  priority
                 />
 
                 <div className="text-4xl lg:text-6xl font-bold pt-5 max-md:text-3xl">
                   IT Division
                 </div>
                 <div className="text-4xl lg:text-6xl font-bold max-md:text-3xl">
-                  The Student Union of <br className="md:hidden"/>Faculty of Medicine,
+                  The Student Union of <br className="md:hidden" />
+                  Faculty of Medicine,
                   <br />
                   Chulalongkorn University
                 </div>
-                <br />
               </div>
             </div>
-
-            <div
-              style={{ backgroundColor: "rgb(67, 160, 71)", width: "100vw" }}
-            >
-              <h2
-                id="aboutus"
-                className="text-white dark:text-white dark:bg-darkpurple px-16 max-md:px-8"
-              
-              >
-                <div className="text-2xl font-bold py-5">About us</div>
-                <p className="text-lg ">
-                  ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-                  พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-                  เพื่อจัดกิจกรรมสนุก ๆ
-                  สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
-                  ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
-                  ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
-                  พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ
-                  google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ
-                  ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ
-                  นอกจากนี้พวกเรายังสนใจใน computer science, data science,
-                  machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
-                  ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
-                  !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
-                  พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
-                  เพื่อจัดกิจกรรมสนุก ๆ
-                  สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
-                  <Activities />
-                </p>
-              </h2>
+            <div style={{ backgroundColor: "white", width: "100vw" }}>
+              <section id="aboutus" >
+                <div className="text-black bg-[#F5C3C5] dark:text-white dark:bg-purple max-md:px-8">
+                  <h2 className="text-2xl font-bold py-5 px-5">About us</h2>
+                  <p className="text-lg px-5 pb-8">
+                    ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                    พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                    เพื่อจัดกิจกรรมสนุก ๆ
+                    สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+                    ปัจจุบันฝ่ายเราเป็นฝ่ายที่ดูแลข้อมูลสารสนเทศต่าง ๆ
+                    ให้กับนิสิตในคณะ ให้บริการทางเทคโนโลยีที่สะดวกและรวดเร็ว
+                    พวกเราคือคนดูแลบริการต่าง ๆ เช่น server docchula.com และ
+                    google workspace พวกเราสร้างเว็บไซต์สำหรับงานต่าง ๆ
+                    ในคณะไม่ว่าจะเป็น AMSci, ANAN DAY, MDCU Voice และอื่น ๆ
+                    นอกจากนี้พวกเรายังสนใจใน computer science, data science,
+                    machine learning และ AI เพื่อนำไปพัฒนาเทคโนโลยีทางการแพทย์
+                    ถ้าคิดว่าสนใจในคอมพิวเตอร์ก็อย่าลังเลที่จะเข้าร่วมกับฝ่ายเทคโนโลยีแล้วมาเรียนรู้ไปด้วยกัน
+                    !ฝ่ายเทคโนโลยีสารสนเทศ หรือฝ่าย IT สพจ.
+                    พวกเราเป็นฝ่ายที่รวมตัวกันของคนที่สนใจด้านคอมพิวเตอร์
+                    เพื่อจัดกิจกรรมสนุก ๆ
+                    สร้างชิ้นงานทางคอมพิวเตอร์และเรียนรู้สิ่งใหม่ ๆ ไปด้วยกัน
+                  </p>
+                </div>
+                <Activities />
+              </section>
 
               <Location />
-              <h2
-                id="contact"
-                className="text-white  dark:bg-darkpurple pb-10"
-              >
-                <div className="text-2xl font-bold pt-5">Contact</div>
 
+              <h2 id="contact" className="text-black bg-[#F5C3C5] dark:text-white dark:bg-purple pb-10">
+                <div className="text-2xl font-bold pt-5">Contact</div>
                 <h5>Email : itdivision@docchula.com</h5>
               </h2>
             </div>
@@ -116,7 +115,6 @@ export default function Home() {
             <div style={{ backgroundColor: "white", width: "100vw" }}>
               <h2 id="teammembers">
                 <div className="text-2xl font-bold pt-5 dark:text-white dark:bg-darkerpurple pb-5">
-                  {" "}
                   Team members
                 </div>
               </h2>
@@ -126,5 +124,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  );
+  )
 }
